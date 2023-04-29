@@ -1,6 +1,6 @@
 aiocron==1.4
 asyncio==3.4.3
-certifi==2020.12.5
+certifi==2022.12.7
 chardet==4.0.0
 coinoxr==0.0.1a0
 croniter==1.0.8
