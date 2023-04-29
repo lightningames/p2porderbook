@@ -21,5 +21,5 @@ six==1.15.0
 Telethon==1.13.0
 typing==3.7.4.1
 tzlocal==2.1
-ujson==5.2.0
+ujson==5.4.0
 urllib3==1.26.5
