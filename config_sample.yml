@@ -5,7 +5,7 @@ api_id:
 api_hash: ''
 
 # Session name. Only one session (with a unique session name) can run at a time
-session_name: 'bahk_bot'
+session_name: 'ob_bot'
 
 # open exchange rates id
 oxr_id: ''
