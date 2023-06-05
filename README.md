@@ -15,7 +15,6 @@ Potential Features to add:
 
 Datasources: 
 - Coingecko API Data for rates and fiat conversions
-- Blockstream Bitcoin API data: https://blockstream.info/api/
 
 Commands: 
 -   /all    - List Open Offers. 
