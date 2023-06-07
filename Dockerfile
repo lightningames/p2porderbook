@@ -1,5 +1,5 @@
-# TODO: this is a template file, has not been tested yet.
-FROM python:3.8
+# TODO: add mongodb install and setup with the dbtools.py file
+FROM python:3.9
 
 WORKDIR /app
 
@@ -8,4 +8,5 @@ RUN pip install --no-cache-dir -r requirements.txt
 
 COPY . .
 
+# set environment variables
 CMD [ "python", "./tgbot.py" ]

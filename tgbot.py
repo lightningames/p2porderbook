@@ -1,5 +1,4 @@
-# from requests.sessions import merge_setting
-from telethon import TelegramClient, events, Button
+from telethon import TelegramClient, events
 import yaml
 import logging
 import random
@@ -44,13 +43,7 @@ intro = header_msg + help_msg
 
 path  = "./"
 config_file = path + 'config.yml'
-
 config = parse_config(config_file)
-
-# with open(config_file, 'rb') as f:
-#     config = yaml.safe_load(f)
-# f.close()
-
 
 ############# logfile ############
 level = logging.INFO
@@ -343,6 +336,7 @@ async def attime():
         msg += "PRICE: " + str(sats) + " per USD \n\n"
         msg += "\n<b> This bot haz more goodies! visit /helpme </b>\n"
         await client.send_message(allowed_chatrooms, msg)
+
         # await get_hkdsat(client, allowed_chatrooms)
     
 #### start bot ####
