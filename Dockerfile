@@ -13,4 +13,8 @@ RUN pip install --no-cache-dir -r requirements.txt
 COPY . .
 
 # set environment variables
+
+# Setup database with dbtools
+RUN python ./dbtools.py
+
 CMD [ "python", "./tgbot.py" ]
