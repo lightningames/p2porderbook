@@ -10,5 +10,14 @@ core_currency = "HKD"
 
 mongo_url = 'mongodb://localhost:27017'
 client = MongoClient('localhost', port=27017)
-db = client.bahkbot
+# Create a new database
+db = client["bahkbot"] 
+
+# db = client.bahkbot
 dbname = 'bahkbot'
+
+# Connect to MongoDB
+# client = MongoClient("mongodb://localhost:27017")  # Replace with your MongoDB connection string
+
+
+
