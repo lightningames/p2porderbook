@@ -32,3 +32,14 @@ Commands:
 
 
 Create and Edit your config.yml with credentials. 
+
+# Docker
+  
+ Dockerfile does the following: 
+  
+  - setup environment
+  - sets up mongodb
+  - installs requirements
+  - initializes db with python dbtools script
+  - runs telegram bot
+  
