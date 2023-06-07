@@ -1,4 +1,4 @@
-from requests.sessions import merge_setting
+# from requests.sessions import merge_setting
 from telethon import TelegramClient, events, Button
 import yaml
 import logging
@@ -14,7 +14,7 @@ import aiocron
 import os
 import time
 from datetime import datetime
-
+from pyaml_env import parse_config
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(name)s - %(levelname)s - %(message)s')
 logging.getLogger('telethon').setLevel(level=logging.WARNING)
@@ -44,9 +44,12 @@ intro = header_msg + help_msg
 
 path  = "./"
 config_file = path + 'config.yml'
-with open(config_file, 'rb') as f:
-    config = yaml.safe_load(f)
-f.close()
+
+config = parse_config(config_file)
+
+# with open(config_file, 'rb') as f:
+#     config = yaml.safe_load(f)
+# f.close()
 
 
 ############# logfile ############
@@ -287,11 +290,6 @@ async def handler(event):
     if '/get_mempool_stats' in rawtext:
         msg = get_mempool_stats()
         await event.reply(msg)
-        homedir = os.getcwd()
-        johoe_path = homedir + '/images/johoe_24h.png'
-        chat_id = event.chat_id
-        await client.send_file(chat_id, johoe_path)
-        await client.send_message(chat_id, "source from jochen-hoenicke.de")
         
     if '/hkdsat' in rawtext: 
         chat_id = event.chat_id
