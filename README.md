@@ -1,6 +1,7 @@
-# bitcoin p2p orderbook as a telegram bot
+## bitcoin p2p orderbook
 
-A simple bot with sat to fiat conversions and ticker features
+A simple telegram bot with sat to fiat conversions and ticker features. 
+Add to any chatroom and let people post their p2p bid/asks which will be broadcast every 12 hrs. 
 
 Features: 
 - admin controls (done)
