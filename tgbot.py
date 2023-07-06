@@ -306,17 +306,18 @@ async def handler(event):
     elif '/del' in rawtext:
         msg = del_offer(rawtext, username)
         await event.reply(msg)
-    
-    elif '/duser' in rawtext:
+
+  # hidden admin commands not shown to public. 
+    elif '/deluser' in rawtext:
         msg = del_user(rawtext, username)
         await event.reply(msg)
-    elif '/admin_add' in rawtext:
+    elif '/addadmin' in rawtext:
         msg = add_admin(rawtext)
         await event.reply(msg)
-    elif '/admin_del' in rawtext:
+    elif '/deladmin' in rawtext:
         msg = del_admin(rawtext)
         await event.reply(msg)
-    elif '/admin_list' in rawtext:
+    elif '/adminlist' in rawtext:
         await event.reply(str(config['admins']))
 
 
