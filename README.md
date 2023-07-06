@@ -1,7 +1,8 @@
-# bitcoin orderbook
+# bitcoin p2p orderbook as a telegram bot
 
-A simple bot with sat conversion and ticker features
+A simple bot with sat to fiat conversions and ticker features
 
+Features: 
 - admin controls (done)
 - coingecko cron job for price updates (done)
 - sats to fiat converter (done)
@@ -9,9 +10,6 @@ A simple bot with sat conversion and ticker features
 
 Potential Features to add: 
 -  Expiring orders after a certain age (e.g. 90 days)
--  Add 24h johoe mempool chart to /get_mempool_stats
--  DM use restricted by chatroom membership? 
--  allow tg admins to change cron job timing
 
 Datasources: 
 - Coingecko API Data for rates and fiat conversions
@@ -35,7 +33,7 @@ Create and Edit your config.yml with credentials.
 
 # Docker
   
- Dockerfile does the following: 
+ TODO: Dockerfile does the following: 
   
   - setup environment
   - sets up mongodb
