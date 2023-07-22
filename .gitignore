@@ -130,7 +130,7 @@ dmypy.json
 
 # addons
 archive
-# config.yml
+config.yml
 *.session
 env
 __pycache__
